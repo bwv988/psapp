@@ -27,9 +27,9 @@ nosetests
 
 ### Run through Docker container:
 
-* Note: Haven't tested this with macOS or Windows, only on Linux. Not sure if stdin redirection works on Mac / Windows.
+* Note: Haven't tested this with macOS or Windows, only on Linux. Not sure if `stdin` redirection works on Mac / Windows.
 
-Run this from the projects main directory `psapp/`.
+Run this from the project's main directory `psapp/`.
 
 ```bash
 # From project main directory.
