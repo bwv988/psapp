@@ -29,8 +29,10 @@ nosetests
 
 * Note: Haven't tested this with macOS or Windows, only on Linux. Not sure if stdin redirection works on Mac / Windows.
 
+Run this from the projects main directory `psapp/`.
 
 ```bash
+# From project main directory.
 docker build -t bwv988/psapp .
 ./psapp.sh < test_inputs/test1.txt
 ```
@@ -53,11 +55,11 @@ Output is produced depending on the outcome, i.e. either the paint batches to pr
 
 ### `Case` class
 
-The `Case` class maintains and continously updates **one** production batch (using the `Batch`) class for the current case.
+The `Case` class maintains and continously updates **one** production batch -- using the `Batch` class -- for the current case.
 
-For each customer their paint likes are assessed individually.
+For each customer, their paint preferences are assessed individually.
 
-Also, the class provides a utility method `print_final_batch()` to output a final production batch string, provided a possible batch was found.
+Also, `Case` provides a utility method `print_final_batch()` to output a final production batch string, provided a possible batch was found.
 
 ### `Batch` class
 
